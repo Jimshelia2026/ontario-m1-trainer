@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ontario M1 — тренажёр знаний</title>
+<style>
+  :root {
+    --fs: 18px;
+    --bg: #f7f8fa; --card: #ffffff; --text: #1b1f24; --muted: #5b6470;
+    --line: #d9dee5; --blue: #1d6fd8;
+    --green: #1a7f37; --greenbg: #e6f6ec;
+    --red: #b42318; --redbg: #fdeaea;
+  }
+  body.dark {
+    --bg: #15181d; --card: #1f242b; --text: #eef1f5; --muted: #a7b0bc;
+    --line: #3a424d; --blue: #5ea4ff;
+    --green: #4cc370; --greenbg: #1d3a27;
+    --red: #ff8a80; --redbg: #44232a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: var(--fs); line-height: 1.55;
+  }
+  header {
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between;
+    padding: 12px 20px; background: var(--card); border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 5;
+  }
+  h1 { font-size: 1.1rem; margin: 0; }
+  h2 { margin-top: 0; }
+  h3 { margin: 18px 0 8px; }
+  nav { display: flex; flex-wrap: wrap; gap: 6px; }
+  .toolbar { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+  .btn, nav button, select {
+    font: inherit; color: var(--text); background: var(--card);
+    border: 1px solid var(--line); border-radius: 8px; padding: 8px 14px; cursor: pointer;
+  }
+  nav button.active, .btn.primary { background: var(--blue); color: #fff; border-color: var(--blue); }
+  button:disabled { opacity: .45; cursor: default; }
+  main { max-width: 900px; margin: 0 auto; padding: 20px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px; color: var(--muted); font-size: .88em; margin-bottom: 10px; }
+  .badge { border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; }
+  .q { font-size: 1.22em; font-weight: 600; margin: 6px 0 14px; }
+  .opt {
+    display: flex; gap: 12px; align-items: flex-start; width: 100%; text-align: left;
+    padding: 14px 16px; margin: 8px 0; border: 2px solid var(--line); border-radius: 10px;
+    background: var(--card); color: var(--text); font: inherit; cursor: pointer;
+  }
+  button.opt:disabled { cursor: default; opacity: 1; }
+  .opt .letter { font-weight: 700; min-width: 1.4em; }
+  .opt .mark { margin-left: auto; font-weight: 700; white-space: nowrap; padding-left: 10px; }
+  .opt.correct { border-color: var(--green); background: var(--greenbg); }
+  .opt.correct .mark { color: var(--green); }
+  .opt.wrong { border-color: var(--red); background: var(--redbg); }
+  .opt.wrong .mark { color: var(--red); }
+  .opt.selected { border-color: var(--blue); box-shadow: inset 0 0 0 1px var(--blue); }
+  .expl { margin-top: 14px; padding: 14px; border-left: 4px solid var(--blue); background: var(--bg); border-radius: 8px; }
+  .expl.plain { border-left-color: var(--line); }
+  .src { font-size: .85em; color: var(--muted); margin-top: 10px; }
+  .note { color: var(--muted); font-size: .9em; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px; justify-content: space-between; align-items: center; }
+  .hidden { display: none !important; }
+  .progress { height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; margin: 10px 0; }
+  .progress > div { height: 100%; background: var(--blue); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(44px, 1fr)); gap: 6px; margin: 14px 0 4px; }
+  .grid button {
+    padding: 8px 0; border: 1px solid var(--line); border-radius: 6px;
+    background: var(--card); color: var(--text); cursor: pointer; font: inherit;
+  }
+  .grid button.answered { background: var(--blue); color: #fff; border-color: var(--blue); }
+  .grid button.cur { outline: 3px solid var(--blue); outline-offset: 1px; }
+  .grid3 { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px; margin: 10px 0 16px; }
+  .stat { border: 1px solid var(--line); border-radius: 10px; padding: 12px; display: flex; flex-direction: column; }
+  .stat span { color: var(--muted); font-size: .9em; }
+  .stat strong { font-size: 1.6rem; }
+  .stat small { color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; margin-top: 8px; display: block; overflow-x: auto; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  label { color: var(--muted); }
+  select { margin-left: 6px; max-width: 100%; }
+  .opt .mark { white-space: normal; }
+  .bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 14px; }
+  .bar label { max-width: 100%; }
+  .signbox {
+    display: flex; justify-content: center; align-items: center; background: #fff;
+    border: 1px solid var(--line); border-radius: 12px; padding: 18px; margin: 6px 0 14px;
+  }
+  .signbox img { max-width: 100%; width: min(360px, 100%); height: auto; }
+  .sign-ru { font-size: 1.3em; font-weight: 700; margin: 4px 0; color: var(--green); }
+  .sign-en { color: var(--muted); margin-bottom: 10px; font-style: italic; }
+  :focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+  @media (max-width: 600px) {
+    header { padding: 10px 12px; }
+    main { padding: 12px; }
+    .card { padding: 16px; }
+    .bar label { display: flex; flex-direction: column; width: 100%; }
+    .bar select { margin: 4px 0 0; width: 100%; }
+    .opt .mark { padding-left: 4px; font-size: .85em; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Ontario M1 — тренажёр знаний</h1>
+  <nav>
+    <button data-mode="learn" class="active">Обучение</button>
+    <button data-mode="practice">Практика</button>
+    <button data-mode="exam">Симуляция M1</button>
+    <button data-mode="mistakes">Ошибки</button>
+    <button data-mode="signs">Дорожные знаки</button>
+    <button data-mode="progress">Прогресс</button>
+  </nav>
+  <div class="toolbar">
+    <button class="btn" data-act="fs" data-v="-1" aria-label="Уменьшить текст">A−</button>
+    <button class="btn" data-act="fs" data-v="1" aria-label="Увеличить текст">A+</button>
+    <button class="btn" data-act="dark">Тёмная тема</button>
+  </div>
+</header>
+<main>
+  <div id="scopeBar" class="bar">
+    <label>Раздел: <select id="scope"></select></label>
+  </div>
+  <div id="signBar" class="bar hidden">
+    <label>Категория: <select id="sscope"></select></label>
+    <label>Режим: <select id="signSub">
+      <option value="learn">Изучение (значение сразу)</option>
+      <option value="quiz">Викторина (выбор ответа)</option>
+    </select></label>
+  </div>
+  <div id="stage"></div>
+</main>
+<script src="questions.js"></script>
+<script src="signs.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
