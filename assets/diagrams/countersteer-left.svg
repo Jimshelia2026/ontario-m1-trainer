@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 330" role="img" aria-label="Противодействие рулю: поворот налево">
+<title>Противодействие рулю: поворот налево</title>
+<rect width="600" height="330" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1a7f37"/></marker></defs>
+<line x1="300" y1="70" x2="300" y2="220" stroke="#5b6470" stroke-width="8"/>
+<line x1="150" y1="110" x2="450" y2="110" stroke="#5b6470" stroke-width="8" stroke-linecap="round"/>
+<circle cx="150" cy="110" r="14" fill="#1d6fd8"/>
+<circle cx="450" cy="110" r="14" fill="#b8c2cc"/>
+<path d="M 150 170 L 150 96" fill="none" stroke="#1a7f37" stroke-width="6" marker-end="url(#ah)"/>
+<text x="300" y="40" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="16" font-weight="bold" fill="#1b1f24" text-anchor="middle">Поворот налево: толкните ЛЕВУЮ рукоятку</text>
+<text x="40" y="270" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="13" font-weight="normal" fill="#1b1f24" text-anchor="start">Толчок вперёд по стороне поворота заставляет мотоцикл наклониться</text><text x="40" y="289" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="13" font-weight="normal" fill="#1b1f24" text-anchor="start">в эту сторону. Затем руль держат, а для выхода из поворота толкают</text><text x="40" y="308" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="13" font-weight="normal" fill="#1b1f24" text-anchor="start">противоположную рукоятку. Толчок должен быть плавным.</text><text x="40" y="327" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="13" font-weight="normal" fill="#1b1f24" text-anchor="start">Вид сверху на руль (схема). Источник: Motorcycle Handbook, стр. 34–35.</text>
+
+</svg>
