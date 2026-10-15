@@ -38,6 +38,9 @@
     return r;
   };
 
+  // Версии вопросов: если текст существенно изменён, мастерство сбрасывается, история ошибок остаётся
+  const QV = Object.fromEntries(Q.map(q => [q.id, q.v || 1]));
+
   // Миграция данных версии 1: сохраняем счётчики, добавляем поля интервалов
   Object.values(store.stats).forEach(s => {
     if (s.lvl === undefined) {
@@ -48,11 +51,22 @@
     }
   });
 
+  // Синхронизация версий: если вопрос изменён, сбрасываем только признаки освоения
+  Object.keys(store.stats).forEach(id => {
+    const s = store.stats[id];
+    if (s.qv === undefined) s.qv = 1;
+    const cur = QV[id];
+    if (cur !== undefined && s.qv < cur) {
+      s.streak = 0; s.rightDays = []; s.lvl = 0; s.due = dayNow(); s.qv = cur;
+    }
+  });
+  save();
+
   function rd(id) {
     return store.stats[id] || { seen: false, c: 0, w: 0, streak: 0, lvl: 0, due: 0, rightDays: [], lastWrong: null, bm: false, mark: null };
   }
   function wr(id) {
-    return store.stats[id] || (store.stats[id] = { seen: false, c: 0, w: 0, streak: 0, lvl: 0, due: 0, rightDays: [], lastWrong: null, bm: false, mark: null });
+    return store.stats[id] || (store.stats[id] = { qv: QV[id] || 1, seen: false, c: 0, w: 0, streak: 0, lvl: 0, due: 0, rightDays: [], lastWrong: null, bm: false, mark: null });
   }
 
   // Освоено: 3 верных подряд и верные ответы минимум в двух разных днях
@@ -63,11 +77,29 @@
   // Ошибка, которую ещё не закрепили
   function isMistake(id) {
     const s = store.stats[id];
-    return !!s && s.lastWrong !== null && !mastered(id);
+    return !!s && s.lastWrong != null && !mastered(id);
   }
   function isDue(id) {
     const s = store.stats[id];
-    return !!s && s.seen && s.due <= dayNow();
+    return !!s && (s.c + s.w > 0) && s.due <= dayNow();
+  }
+
+  // Состояния: новый / изучается / нужно повторить / освоен
+  function statusOf(id) {
+    const s = store.stats[id];
+    if (!s || !s.seen) return "new";
+    if (mastered(id)) return "mastered";
+    if (isDue(id) || s.lastWrong !== null) return "review";
+    return "learning";
+  }
+  const STATUS_LABEL = { new: "Новый", learning: "Изучается", review: "Нужно повторить", mastered: "Освоен" };
+  function statusReason(id) {
+    const st = statusOf(id), s = rd(id);
+    if (st === "new") return "Вопрос ещё не открывался.";
+    if (st === "mastered") return "Освоен: 3 верных ответа подряд в минимум двух разных днях. История ошибок сохранена.";
+    if (s.lastWrong !== null && s.streak < 3) return "Последний ответ был неверным (ошибок всего: " + s.w + "). Вопрос остаётся в очереди, пока не будет 3 верных ответов подряд в разные дни.";
+    if (isDue(id)) return "Пора повторить по расписанию.";
+    return "Ответы верные, но освоение ещё не завершено.";
   }
 
   function recordAnswer(id, ok) {
@@ -100,7 +132,7 @@
     if (!s.seen) w = 0.6;
     else if (s.due <= t) w = 1.0;
     else w = 0.15;
-    if (s.lastWrong !== null && t - s.lastWrong <= 1) w *= 2.5;
+    if (s.lastWrong != null && t - s.lastWrong <= 1) w *= 2.5;
     if (mastered(id)) w *= 0.3;
     if (s.mark === "difficult") w *= 1.8;
     if (s.mark === "easy") w *= 0.5;
@@ -126,6 +158,7 @@
 
   // ---------- Состояние ----------
   let mode = "learn";
+  let lessonIndex = 0;
   let scope = "all";
   let sscope = "all";
   let idx = 0;
@@ -174,6 +207,7 @@
   function meta(q, extra) {
     return `<div class="meta">
       <span class="badge">${esc(q.topic)}</span>
+      <span class="badge">${STATUS_LABEL[statusOf(q.id)]}</span>
       <span class="badge">${DIFF[q.difficulty] || ""}</span>
       ${extra ? `<span>${extra}</span>` : ""}
     </div>`;
@@ -368,8 +402,9 @@
     const items = l.map(id => {
       const q = byId[id], s = rd(id);
       return `<div class="card" style="margin-top:12px">
+        <p class="note">${esc(statusReason(id))}</p>
         <div class="meta"><span class="badge">${esc(q.topic)}</span><span>Ошибок всего: ${s.w}</span>
-          <span>Последняя ошибка: ${s.lastWrong !== null ? dayStr(s.lastWrong) : "—"}</span>
+          <span>Последняя ошибка: ${s.lastWrong != null ? dayStr(s.lastWrong) : "—"}</span>
           <span>Верных подряд: ${s.streak} из 3</span></div>
         <div class="q">${esc(q.q)}</div>
         <div class="opt correct"><span class="letter">✓</span><span>${esc(q.options[q.correct])}</span></div>
@@ -385,7 +420,8 @@
     const mast = Q.filter(q => mastered(q.id)).length;
     const due = Q.filter(isDue).length;
     const newAvail = Q.filter(q => !rd(q.id).seen).length;
-    return { seen, mast, due, newAvail, mist: Q.filter(isMistake).length };
+    const hist = Object.values(store.stats).reduce((a, x) => a + (x.w || 0), 0);
+    return { seen, mast, due, newAvail, mist: Q.filter(isMistake).length, hist };
   }
   function dashboardCompact() {
     const s = summary();
@@ -413,6 +449,7 @@
         <div class="stat"><span>Освоено</span><strong>${s.mast}</strong><small>3 верных подряд, в двух разных днях</small></div>
         <div class="stat"><span>Повторить сегодня</span><strong>${s.due}</strong></div>
         <div class="stat"><span>Ошибок не закреплено</span><strong>${s.mist}</strong></div>
+        <div class="stat"><span>Всего ошибок (история)</span><strong>${s.hist}</strong><small>сохраняется даже после освоения</small></div>
         <div class="stat"><span>Знаков в тренажёре</span><strong>${SIGNS.length}</strong><small>в викторине отвечено: ${sSeen}</small></div>
       </div>
       <div class="row" style="justify-content:flex-start">
@@ -501,9 +538,24 @@
     render();
   }
 
+  // ---------- Визуальные уроки ----------
+  function renderLessons() {
+    const lessons = window.M1_LESSONS || [];
+    if (!lessons.length) { $("#stage").innerHTML = '<div class="card">Уроки пока недоступны.</div>'; return; }
+    lessonIndex = Math.max(0, Math.min(lessons.length - 1, lessonIndex));
+    const x = lessons[lessonIndex];
+    const lessonList = lessons.map((l, i) => `<button data-act="lesson-open" data-v="${i}" class="${i === lessonIndex ? 'active' : ''}">${i+1}. ${esc(l.title)}</button>`).join('');
+    const topicQuestions = Q.filter(q => q.topic === x.title || q.topic.includes(x.title) || x.title.includes(q.topic)).slice(0, 3);
+    const checks = topicQuestions.length ? topicQuestions.map(q => `<div class="lesson-block"><strong>${esc(q.q)}</strong><details><summary>Показать правильный ответ</summary><p>${esc(q.options[q.correct])}</p><p class="note">${esc(q.explanation || '')}</p></details><div class="src">${esc(q.source || '')}</div></div>`).join('') : '<p class="note">Для проверки знаний перейдите в режим «Практика».</p>';
+    $("#stage").innerHTML = `<div class="card"><h2>Визуальные уроки · ${lessonIndex+1} / ${lessons.length}</h2><div class="lesson-list">${lessonList}</div><h2>${esc(x.title)}</h2><p><strong>${esc(x.rule)}</strong></p><img class="lesson-img" src="${esc(x.diagram)}" alt="Учебная иллюстрация: ${esc(x.title)}" loading="lazy"><div class="lesson-block"><h3>Объяснение</h3><p>${esc(x.body)}</p></div><div class="lesson-block"><h3>Практический пример</h3><p>${esc(x.example)}</p></div><div class="lesson-block"><h3>Распространённая ошибка</h3><p>${esc(x.mistake)}</p></div><h3>Контрольные вопросы</h3>${checks}<div class="src">Источник: ${esc(x.source)}. Схема учебная, упрощённая.</div><div class="row"><button class="btn" data-act="lesson-prev" ${lessonIndex===0?'disabled':''}>← Предыдущий урок</button><button class="btn primary" data-act="lesson-next" ${lessonIndex===lessons.length-1?'disabled':''}>Следующий урок →</button></div></div>`;
+  }
+
   // ---------- Управление ----------
   function act(a, id, v) {
     switch (a) {
+      case "lesson-open": lessonIndex = +v; break;
+      case "lesson-prev": lessonIndex--; break;
+      case "lesson-next": lessonIndex++; break;
       case "prev": idx--; break;
       case "next": idx++; break;
       case "bm": { const s = wr(id); s.bm = !s.bm; save(); break; }
@@ -552,7 +604,7 @@
       if ($("#signSub").value === "quiz") renderSignQuiz(); else renderSignLearn();
       return;
     }
-    ({ learn: renderLearn, practice: renderPractice, exam: renderExam, mistakes: renderMistakes, progress: renderProgress })[mode]();
+    ({ learn: renderLearn, practice: renderPractice, exam: renderExam, mistakes: renderMistakes, progress: renderProgress, lessons: renderLessons })[mode]();
   }
 
   document.addEventListener("click", e => {
