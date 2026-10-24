@@ -106,6 +106,8 @@
     .bar select { margin: 4px 0 0; width: 100%; }
     .opt .mark { padding-left: 4px; font-size: .85em; }
   }
+  .banner { border:1px solid var(--line); border-radius:10px; padding:10px 14px; margin:0 0 10px; background:var(--card); color:var(--text); }
+  .banner.warn { border-color:var(--red); color:var(--red); }
 </style>
 </head>
 <body>
@@ -115,6 +117,7 @@
     <button data-mode="learn" class="active">Обучение</button>
     <button data-mode="practice">Практика</button>
     <button data-mode="exam">Симуляция M1</button>
+    <button data-mode="exam64">Симуляция 64</button>
     <button data-mode="mistakes">Ошибки</button>
     <button data-mode="signs">Дорожные знаки</button>
     <button data-mode="progress">Прогресс</button>
@@ -126,6 +129,7 @@
     <button class="btn" data-act="dark">Тёмная тема</button>
   </div>
 </header>
+<div id="banner" style="max-width:900px;margin:12px auto 0;padding:0 20px"></div>
 <main>
   <div id="scopeBar" class="bar">
     <label>Раздел: <select id="scope"></select></label>
@@ -143,5 +147,6 @@
 <script src="signs.js"></script>
 <script src="lessons.js"></script>
 <script src="app.js"></script>
+<script src="exam64.js"></script>
 </body>
 </html>

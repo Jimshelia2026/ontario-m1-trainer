@@ -1,0 +1,331 @@
+﻿original_id,field,before,after,note
+m1-003,source,"Motorcycle Handbook — раздел «Distance in front», стр. 46","Motorcycle Handbook, стр. 46 («Distance in front», два секунды)","проверено по тексту руководства: Motorcycle Handbook, стр. 46 («Distance in front», два секунды)"
+m1-003,status,QUARANTINED,VERIFIED,
+m1-004,source,"Motorcycle Handbook — раздел «Distance in front», стр. 46","Motorcycle Handbook, стр. 46–47 (счёт «одна тысяча один, одна тысяча два»)","проверено по тексту руководства: Motorcycle Handbook, стр. 46–47 (счёт «одна тысяча один, одна тысяча два»)"
+m1-004,status,QUARANTINED,VERIFIED,
+m1-006,source,"Motorcycle Handbook — раздел «Distance in front», стр. 46","Motorcycle Handbook, стр. 46–47 («pull around the vehicle in front»)","проверено по тексту руководства: Motorcycle Handbook, стр. 46–47 («pull around the vehicle in front»)"
+m1-006,status,QUARANTINED,VERIFIED,
+m1-007,source,"Motorcycle Handbook — раздел «Blind spots», стр. 49","Motorcycle Handbook, стр. 49 («Blind spots» у большого транспорта)","проверено по тексту руководства: Motorcycle Handbook, стр. 49 («Blind spots» у большого транспорта)"
+m1-007,status,QUARANTINED,VERIFIED,
+m1-008,source,"Motorcycle Handbook — раздел «Stopping distance», стр. 49","Motorcycle Handbook, стр. 49 (не подрезать большой транспорт)","проверено по тексту руководства: Motorcycle Handbook, стр. 49 (не подрезать большой транспорт)"
+m1-008,status,QUARANTINED,VERIFIED,
+m1-012,source,"Motorcycle Handbook — раздел «Driving on dangerous surfaces», стр. 61","Motorcycle Handbook, стр. 61 («Driving on dangerous surfaces»)","проверено по тексту руководства: Motorcycle Handbook, стр. 61 («Driving on dangerous surfaces»)"
+m1-012,status,QUARANTINED,VERIFIED,
+m1-013,source,"Motorcycle Handbook — раздел «Driving on dangerous surfaces», стр. 61","Motorcycle Handbook, стр. 61 («Tips on handling uneven surfaces»)","проверено по тексту руководства: Motorcycle Handbook, стр. 61 («Tips on handling uneven surfaces»)"
+m1-013,status,QUARANTINED,VERIFIED,
+m1-024,source,"Motorcycle Handbook — раздел «Introduction», стр. 1","Motorcycle Handbook, стр. 1 («Driver error is the most common cause»)","проверено по тексту руководства: Motorcycle Handbook, стр. 1 («Driver error is the most common cause»)"
+m1-024,status,QUARANTINED,VERIFIED,
+m1-025,source,"Motorcycle Handbook — раздел «Introduction», стр. 1–2","Motorcycle Handbook, стр. 1–2 («losing control while speeding»)","проверено по тексту руководства: Motorcycle Handbook, стр. 1–2 («losing control while speeding»)"
+m1-025,status,QUARANTINED,VERIFIED,
+m1-026,source,"Motorcycle Handbook — раздел «Driving in difficult weather conditions» («Driving in rain»), стр. 63","Motorcycle Handbook, стр. 17 («Bright colours and reflective items»)","проверено по тексту руководства: Motorcycle Handbook, стр. 17 («Bright colours and reflective items»)"
+m1-026,status,QUARANTINED,VERIFIED,
+m1-027,source,"Motorcycle Handbook — «Checklist: Level One road test», стр. 7","Motorcycle Handbook, стр. 7 (Checklist: Level One road test)","проверено по тексту руководства: Motorcycle Handbook, стр. 7 (Checklist: Level One road test)"
+m1-027,status,QUARANTINED,VERIFIED,
+m1-032,source,"Motorcycle Handbook — раздел «Driving in rain», стр. 63","Motorcycle Handbook, стр. 63–64 («Driving in rain»)","проверено по тексту руководства: Motorcycle Handbook, стр. 63–64 («Driving in rain»)"
+m1-032,status,QUARANTINED,VERIFIED,
+m1-042,source,"Motorcycle Handbook — раздел «Wear a helmet», стр. 16","Motorcycle Handbook, стр. 16 («Wear a helmet»)","проверено по тексту руководства: Motorcycle Handbook, стр. 16 («Wear a helmet»)"
+m1-042,status,QUARANTINED,VERIFIED,
+m1-043,source,"Motorcycle Handbook — раздел «Wear a helmet», стр. 16","Motorcycle Handbook, стр. 16 («Wear a helmet»)","проверено по тексту руководства: Motorcycle Handbook, стр. 16 («Wear a helmet»)"
+m1-043,status,QUARANTINED,VERIFIED,
+m1-044,source,"Motorcycle Handbook — раздел «Do a pre-vehicle check» («Tires»), стр. 28","Motorcycle Handbook, стр. 28 («Tires»)","проверено по тексту руководства: Motorcycle Handbook, стр. 28 («Tires»)"
+m1-044,status,QUARANTINED,VERIFIED,
+m1-045,source,"Motorcycle Handbook — раздел «Do a pre-vehicle check» («Brakes»), стр. 29","Motorcycle Handbook, стр. 29 («Brakes»)","проверено по тексту руководства: Motorcycle Handbook, стр. 29 («Brakes»)"
+m1-045,status,QUARANTINED,VERIFIED,
+m1-046,source,"Motorcycle Handbook — раздел «Getting on your motorcycle or moped», стр. 31","Motorcycle Handbook, стр. 31 (Getting on…) и стр. 27","проверено по тексту руководства: Motorcycle Handbook, стр. 31 (Getting on…) и стр. 27"
+m1-046,status,QUARANTINED,VERIFIED,
+m1-047,source,"Motorcycle Handbook — раздел «Adjust your mirrors», стр. 29","Motorcycle Handbook, стр. 29 («Adjust your mirrors»)","проверено по тексту руководства: Motorcycle Handbook, стр. 29 («Adjust your mirrors»)"
+m1-047,status,QUARANTINED,VERIFIED,
+m1-048,source,"Motorcycle Handbook — раздел «Turn on your headlight», стр. 30","Motorcycle Handbook, стр. 30 («Turn on your headlight»)","проверено по тексту руководства: Motorcycle Handbook, стр. 30 («Turn on your headlight»)"
+m1-048,status,QUARANTINED,VERIFIED,
+m1-049,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-026
+m1-051,source,"Motorcycle Handbook — раздел «Sharing the road with large vehicles» («Spray»), стр. 50","Motorcycle Handbook, стр. 50 («Spray»; держаться далеко от большой машины)","проверено по тексту руководства: Motorcycle Handbook, стр. 50 («Spray»; держаться далеко от большой машины)"
+m1-051,status,QUARANTINED,VERIFIED,
+m1-058,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-012
+m1-059,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-013
+m1-060,source,"Motorcycle Handbook — раздел «Driving on dangerous surfaces», стр. 61–62","Motorcycle Handbook, стр. 61 (wet wooden surface; «may cause skidding»)","проверено по тексту руководства: Motorcycle Handbook, стр. 61 (wet wooden surface; «may cause skidding»)"
+m1-060,status,QUARANTINED,VERIFIED,
+m1-061,source,"Motorcycle Handbook — раздел «Stopping at a railway crossing», стр. 62","Motorcycle Handbook, стр. 62 («Never drive around… a railway gate»)","проверено по тексту руководства: Motorcycle Handbook, стр. 62 («Never drive around… a railway gate»)"
+m1-061,status,QUARANTINED,VERIFIED,
+m1-062,source,"Motorcycle Handbook — раздел «Stopping at a railway crossing», стр. 62","Motorcycle Handbook, стр. 62 (ждать прекращения мигания и подъёма шлагбаума)","проверено по тексту руководства: Motorcycle Handbook, стр. 62 (ждать прекращения мигания и подъёма шлагбаума)"
+m1-062,status,QUARANTINED,VERIFIED,
+m1-063,source,"Motorcycle Handbook — раздел «Stopping at a railway crossing», стр. 62","Motorcycle Handbook, стр. 62 («Make sure you have enough room to cross the tracks completely»)","проверено по тексту руководства: Motorcycle Handbook, стр. 62 («Make sure you have enough room to cross the tracks completely»)"
+m1-063,status,QUARANTINED,VERIFIED,
+m1-064,source,"Motorcycle Handbook — раздел «Stopping at a railway crossing», стр. 62","Motorcycle Handbook, стр. 62 («Avoid shifting gears while crossing tracks»)","проверено по тексту руководства: Motorcycle Handbook, стр. 62 («Avoid shifting gears while crossing tracks»)"
+m1-064,status,QUARANTINED,VERIFIED,
+m1-065,source,"Motorcycle Handbook — раздел «Stopping at a railway crossing», стр. 62","Motorcycle Handbook, стр. 62 («immediately leave your vehicle and move to a safe place»)","проверено по тексту руководства: Motorcycle Handbook, стр. 62 («immediately leave your vehicle and move to a safe place»)"
+m1-065,status,QUARANTINED,VERIFIED,
+m1-066,source,"Motorcycle Handbook — раздел «Sharing the road with municipal buses», стр. 50","Motorcycle Handbook, стр. 50 (уступать автобусу, возвращающемуся в поток — закон)","проверено по тексту руководства: Motorcycle Handbook, стр. 50 (уступать автобусу, возвращающемуся в поток — закон)"
+m1-066,status,QUARANTINED,VERIFIED,
+m1-067,source,"Motorcycle Handbook — раздел «Turbulence», стр. 50","Motorcycle Handbook, стр. 50 («Turbulence»)","проверено по тексту руководства: Motorcycle Handbook, стр. 50 («Turbulence»)"
+m1-067,status,QUARANTINED,VERIFIED,
+m1-068,source,"Motorcycle Handbook — раздел «Stopping distance», стр. 49","Motorcycle Handbook, стр. 49 (больший тормозной путь большой машины)","проверено по тексту руководства: Motorcycle Handbook, стр. 49 (больший тормозной путь большой машины)"
+m1-068,status,QUARANTINED,VERIFIED,
+m1-075,source,"Motorcycle Handbook — раздел «Level Two – Class M2 or M2(L), or M2(M)», стр. 7–8","Motorcycle Handbook, стр. 7 («Level Two»)","проверено по тексту руководства: Motorcycle Handbook, стр. 7 («Level Two»)"
+m1-075,status,QUARANTINED,VERIFIED,
+m1-076,source,"Motorcycle Handbook — раздел «Level Two – Class M2 or M2(L), or M2(M)», стр. 7–8","Motorcycle Handbook, стр. 7–8 («Level Two»)","проверено по тексту руководства: Motorcycle Handbook, стр. 7–8 («Level Two»)"
+m1-076,status,QUARANTINED,VERIFIED,
+m1-077,source,"Motorcycle Handbook — «Checklist: Level One road test», стр. 7","Motorcycle Handbook, стр. 7 (Checklist: Level One road test) и стр. 10","проверено по тексту руководства: Motorcycle Handbook, стр. 7 (Checklist: Level One road test) и стр. 10"
+m1-077,status,QUARANTINED,VERIFIED,
+m1-078,q,Что нужно принести на дорожный тест Level One кроме подходящего мотоцикла?,Что из перечисленного нужно принести на дорожный тест Level One?,"исправлено и проверено по тексту руководства: Motorcycle Handbook, стр. 7 (Checklist: Level One road test)"
+m1-078,source,"Motorcycle Handbook — «Checklist: Level One road test», стр. 7","Motorcycle Handbook, стр. 7 (Checklist: Level One road test)","исправлено и проверено по тексту руководства: Motorcycle Handbook, стр. 7 (Checklist: Level One road test)"
+m1-078,status,QUARANTINED,CORRECTED_AND_VERIFIED,
+m1-079,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-166
+m1-080,source,"Driver’s Handbook — раздел «High-Occupancy Vehicle (HOV) Lane», стр. 89","Motorcycle Handbook/Driver’s Handbook, стр. 89 (буферная разметка HOV)","проверено по тексту руководства: Motorcycle Handbook/Driver’s Handbook, стр. 89 (буферная разметка HOV)"
+m1-080,status,QUARANTINED,VERIFIED,
+m1-081,status,QUARANTINED,VERIFIED,
+m1-081,signId,,key-stop,проверено по тексту руководства (стр. 118); изображение знака key-stop
+m1-082,status,QUARANTINED,VERIFIED,
+m1-082,signId,,key-yield,проверено по тексту руководства (стр. 118); изображение знака key-yield
+m1-083,status,QUARANTINED,VERIFIED,
+m1-084,status,QUARANTINED,VERIFIED,
+m1-086,source,"Driver’s Handbook — раздел «High-Occupancy Vehicle (HOV) Lane», стр. 89","Driver’s Handbook, стр. 89 (крупные грузовики не допускаются)","проверено по тексту руководства: Driver’s Handbook, стр. 89 (крупные грузовики не допускаются)"
+m1-086,status,QUARANTINED,VERIFIED,
+m1-088,source,"Driver’s Handbook — раздел «High-Occupancy Vehicle (HOV) Lane», стр. 89","Driver’s Handbook, стр. 89 («HOV lanes on provincial highways»)","проверено по тексту руководства: Driver’s Handbook, стр. 89 («HOV lanes on provincial highways»)"
+m1-088,status,QUARANTINED,VERIFIED,
+m1-093,source,"Motorcycle Handbook — раздел «Driving on dangerous surfaces», стр. 61","Motorcycle Handbook, стр. 61 («Stay in the tire tracks away from the loose gravel»)","проверено по тексту руководства: Motorcycle Handbook, стр. 61 («Stay in the tire tracks away from the loose gravel»)"
+m1-093,status,QUARANTINED,VERIFIED,
+m1-094,source,"Motorcycle Handbook — раздел «Stopping at a railway crossing» (пути, параллельные направлению движения), стр. 63","Motorcycle Handbook, стр. 63 (параллельные рельсы — не менее 45°)","проверено по тексту руководства: Motorcycle Handbook, стр. 63 (параллельные рельсы — не менее 45°)"
+m1-094,status,QUARANTINED,VERIFIED,
+m1-095,source,"Motorcycle Handbook — раздел «Grooves, gratings and scraped roads», стр. 63","Motorcycle Handbook, стр. 63 («Avoid overreacting… gentle but firm grip»)","проверено по тексту руководства: Motorcycle Handbook, стр. 63 («Avoid overreacting… gentle but firm grip»)"
+m1-095,status,QUARANTINED,VERIFIED,
+m1-096,source,"Motorcycle Handbook — раздел «Driving on dangerous surfaces», стр. 61","Motorcycle Handbook, стр. 61 («Drive with extra care in a construction area»)","проверено по тексту руководства: Motorcycle Handbook, стр. 61 («Drive with extra care in a construction area»)"
+m1-096,status,QUARANTINED,VERIFIED,
+m1-extra-001,source,"Motorcycle Handbook, стр. 6","Motorcycle Handbook, стр. 6 (минимум 60 дней на Level One)","проверено по тексту руководства: Motorcycle Handbook, стр. 6 (минимум 60 дней на Level One)"
+m1-extra-001,status,QUARANTINED,VERIFIED,
+m1-extra-002,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-019
+m1-extra-003,source,"Motorcycle Handbook, стр. 16","Motorcycle Handbook, стр. 17 («make sure your helmet fits snugly»)","проверено по тексту руководства: Motorcycle Handbook, стр. 17 («make sure your helmet fits snugly»)"
+m1-extra-003,status,QUARANTINED,VERIFIED,
+m1-extra-004,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-042
+m1-extra-005,source,"Motorcycle Handbook, стр. 20","Motorcycle Handbook, стр. 20 («Front brake lever»)","проверено по тексту руководства: Motorcycle Handbook, стр. 20 («Front brake lever»)"
+m1-extra-005,status,QUARANTINED,VERIFIED,
+m1-extra-006,source,"Motorcycle Handbook, стр. 19","Motorcycle Handbook, стр. 19 («Throttle»)","проверено по тексту руководства: Motorcycle Handbook, стр. 19 («Throttle»)"
+m1-extra-006,status,QUARANTINED,VERIFIED,
+m1-extra-007,source,"Motorcycle Handbook, стр. 28","Motorcycle Handbook, стр. 28 («Pressure»)","проверено по тексту руководства: Motorcycle Handbook, стр. 28 («Pressure»)"
+m1-extra-007,status,QUARANTINED,VERIFIED,
+m1-extra-008,source,"Motorcycle Handbook, стр. 29","Motorcycle Handbook, стр. 29 («Brakes»)","проверено по тексту руководства: Motorcycle Handbook, стр. 29 («Brakes»)"
+m1-extra-008,status,QUARANTINED,VERIFIED,
+m1-extra-009,source,"Motorcycle Handbook, стр. 29","Motorcycle Handbook, стр. 29 («Lights»)","проверено по тексту руководства: Motorcycle Handbook, стр. 29 («Lights»)"
+m1-extra-009,status,QUARANTINED,VERIFIED,
+m1-extra-010,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-033
+m1-extra-011,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-034
+m1-extra-012,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-038
+m1-extra-013,source,"Motorcycle Handbook, стр. 20","Motorcycle Handbook, стр. 20 («Rear brake lever»)","проверено по тексту руководства: Motorcycle Handbook, стр. 20 («Rear brake lever»)"
+m1-extra-013,status,QUARANTINED,VERIFIED,
+m1-extra-014,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-003
+m1-extra-015,source,"Motorcycle Handbook — раздел «Distance in front», стр. 46 («leave even more space» при неблагоприятных условиях)","Motorcycle Handbook, стр. 46 («Distance in front»)","проверено по тексту руководства: Motorcycle Handbook, стр. 46 («Distance in front»)"
+m1-extra-015,status,QUARANTINED,VERIFIED,
+m1-extra-016,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-054
+m1-extra-017,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-028
+m1-extra-018,source,"Motorcycle Handbook, стр. 60–63","Motorcycle Handbook, стр. 61 («Dangerous surfaces»)","проверено по тексту руководства: Motorcycle Handbook, стр. 61 («Dangerous surfaces»)"
+m1-extra-018,status,QUARANTINED,VERIFIED,
+m1-extra-019,source,"Motorcycle Handbook, стр. 61","Motorcycle Handbook, стр. 61 (wet wooden surfaces)","проверено по тексту руководства: Motorcycle Handbook, стр. 61 (wet wooden surfaces)"
+m1-extra-019,status,QUARANTINED,VERIFIED,
+m1-extra-020,source,"Motorcycle Handbook, стр. 49–50","Motorcycle Handbook, стр. 49 («Blind spots»)","проверено по тексту руководства: Motorcycle Handbook, стр. 49 («Blind spots»)"
+m1-extra-020,status,QUARANTINED,VERIFIED,
+m1-extra-021,source,"Motorcycle Handbook, стр. 49–50","Motorcycle Handbook, стр. 49 («right turn» грузовика)","проверено по тексту руководства: Motorcycle Handbook, стр. 49 («right turn» грузовика)"
+m1-extra-021,status,QUARANTINED,VERIFIED,
+m1-106,status,QUARANTINED,VERIFIED,
+m1-107,status,QUARANTINED,VERIFIED,
+m1-108,status,QUARANTINED,VERIFIED,
+m1-109,status,QUARANTINED,VERIFIED,
+m1-111,status,QUARANTINED,VERIFIED,
+m1-112,status,QUARANTINED,VERIFIED,
+m1-113,status,QUARANTINED,VERIFIED,
+m1-114,status,QUARANTINED,VERIFIED,
+m1-115,status,QUARANTINED,VERIFIED,
+m1-117,status,QUARANTINED,VERIFIED,
+m1-118,status,QUARANTINED,VERIFIED,
+m1-120,status,QUARANTINED,VERIFIED,
+m1-121,status,QUARANTINED,VERIFIED,
+m1-122,status,QUARANTINED,VERIFIED,
+m1-123,status,QUARANTINED,VERIFIED,
+m1-124,status,QUARANTINED,VERIFIED,
+m1-125,status,QUARANTINED,VERIFIED,
+m1-126,status,QUARANTINED,VERIFIED,
+m1-127,status,QUARANTINED,VERIFIED,
+m1-128,status,QUARANTINED,VERIFIED,
+m1-129,status,QUARANTINED,VERIFIED,
+m1-130,status,QUARANTINED,VERIFIED,
+m1-131,status,QUARANTINED,VERIFIED,
+m1-132,status,QUARANTINED,VERIFIED,
+m1-133,status,QUARANTINED,VERIFIED,
+m1-134,status,QUARANTINED,VERIFIED,
+m1-135,status,QUARANTINED,VERIFIED,
+m1-136,status,QUARANTINED,VERIFIED,
+m1-137,status,QUARANTINED,VERIFIED,
+m1-139,status,QUARANTINED,VERIFIED,
+m1-141,status,QUARANTINED,VERIFIED,
+m1-142,status,QUARANTINED,VERIFIED,
+m1-143,options[A],"Знак запрещает движение пешеходов, но водитель всё равно обязан наблюдать за дорогой.","Знак запрещает движение пешеходов; продолжайте наблюдать за дорогой, так как запрет не гарантирует отсутствия пешеходов.",
+m1-144,status,QUARANTINED,VERIFIED,
+m1-145,status,QUARANTINED,VERIFIED,
+m1-146,status,QUARANTINED,VERIFIED,
+m1-148,status,QUARANTINED,VERIFIED,
+m1-150,status,QUARANTINED,VERIFIED,
+m1-151,status,QUARANTINED,VERIFIED,
+m1-152,status,QUARANTINED,VERIFIED,
+m1-153,status,QUARANTINED,VERIFIED,
+m1-154,status,QUARANTINED,VERIFIED,
+m1-155,status,QUARANTINED,VERIFIED,
+m1-157,status,QUARANTINED,VERIFIED,
+m1-158,status,QUARANTINED,VERIFIED,
+m1-159,status,QUARANTINED,VERIFIED,
+m1-160,status,QUARANTINED,VERIFIED,
+m1-161,status,QUARANTINED,VERIFIED,
+m1-162,status,QUARANTINED,VERIFIED,
+m1-163,status,QUARANTINED,VERIFIED,
+m1-164,status,QUARANTINED,VERIFIED,
+m1-167,status,QUARANTINED,VERIFIED,
+m1-169,status,QUARANTINED,VERIFIED,
+m1-170,status,QUARANTINED,VERIFIED,
+m1-171,q,Какой знак соответствует описанию: Стрелки на знаке показывают направление движения в круге.,Какой знак соответствует описанию: жёлтый ромб с круговыми стрелками.,проверено: значение знака сверено с текстом руководства (стр. 127); варианты оценены
+m1-171,status,QUARANTINED,VERIFIED,
+m1-172,status,QUARANTINED,VERIFIED,
+m1-174,status,QUARANTINED,VERIFIED,
+m1-175,status,QUARANTINED,VERIFIED,
+m1-177,status,QUARANTINED,VERIFIED,
+m1-178,status,QUARANTINED,VERIFIED,
+m1-178,signId,key-stop,warn-stop-sign-ahead,проверено: значение знака сверено с текстом руководства (стр. 129); варианты оценены
+m1-179,status,QUARANTINED,VERIFIED,
+m1-179,signId,key-stop,warn-stop-sign-ahead,проверено: значение знака сверено с текстом руководства (стр. 129); варианты оценены
+m1-180,status,QUARANTINED,VERIFIED,
+m1-181,status,QUARANTINED,VERIFIED,
+m1-182,status,QUARANTINED,VERIFIED,
+m1-183,status,QUARANTINED,VERIFIED,
+m1-184,status,QUARANTINED,VERIFIED,
+m1-185,status,QUARANTINED,VERIFIED,
+m1-186,status,QUARANTINED,VERIFIED,
+m1-187,status,QUARANTINED,VERIFIED,
+m1-189,status,QUARANTINED,VERIFIED,
+m1-190,status,QUARANTINED,VERIFIED,
+m1-191,status,QUARANTINED,VERIFIED,
+m1-192,status,QUARANTINED,VERIFIED,
+m1-193,status,QUARANTINED,VERIFIED,
+m1-194,status,QUARANTINED,VERIFIED,
+m1-195,q,Какой знак соответствует описанию: Стрелка и неровная поверхность на знаке.,Какой знак соответствует описанию: жёлтый ромб со стрелкой вверх над неровной линией.,проверено: значение знака сверено с текстом руководства (стр. 132); варианты оценены
+m1-195,status,QUARANTINED,VERIFIED,
+m1-196,status,QUARANTINED,VERIFIED,
+m1-198,status,QUARANTINED,VERIFIED,
+m1-199,status,QUARANTINED,VERIFIED,
+m1-200,status,QUARANTINED,VERIFIED,
+m1-202,status,QUARANTINED,VERIFIED,
+m1-203,status,QUARANTINED,VERIFIED,
+m1-204,status,QUARANTINED,VERIFIED,
+m1-205,status,QUARANTINED,VERIFIED,
+m1-206,status,QUARANTINED,VERIFIED,
+m1-207,status,QUARANTINED,VERIFIED,
+m1-208,status,QUARANTINED,VERIFIED,
+m1-210,status,QUARANTINED,VERIFIED,
+m1-211,status,QUARANTINED,VERIFIED,
+m1-213,status,QUARANTINED,VERIFIED,
+m1-214,status,QUARANTINED,VERIFIED,
+m1-216,status,QUARANTINED,VERIFIED,
+m1-217,status,QUARANTINED,VERIFIED,
+m1-218,status,QUARANTINED,VERIFIED,
+m1-219,status,QUARANTINED,VERIFIED,
+m1-220,status,QUARANTINED,VERIFIED,
+m1-221,status,QUARANTINED,VERIFIED,
+m1-222,status,QUARANTINED,VERIFIED,
+m1-223,status,QUARANTINED,VERIFIED,
+m1-226,status,QUARANTINED,VERIFIED,
+m1-227,status,QUARANTINED,VERIFIED,
+m1-228,status,QUARANTINED,VERIFIED,
+m1-229,status,QUARANTINED,VERIFIED,
+m1-230,status,QUARANTINED,VERIFIED,
+m1-232,status,QUARANTINED,VERIFIED,
+m1-233,status,QUARANTINED,VERIFIED,
+m1-234,status,QUARANTINED,VERIFIED,
+m1-235,status,QUARANTINED,VERIFIED,
+m1-236,status,QUARANTINED,VERIFIED,
+m1-237,status,QUARANTINED,VERIFIED,
+m1-238,status,QUARANTINED,VERIFIED,
+m1-239,status,QUARANTINED,VERIFIED,
+m1-239,options[D],"Следуйте по маршруту, указанному знаком.",Следуйте по указанному маршруту к пассажирскому вокзалу.,
+m1-240,status,QUARANTINED,VERIFIED,
+m1-241,status,QUARANTINED,VERIFIED,
+m1-242,status,QUARANTINED,VERIFIED,
+m1-242,options[B],"Следуйте по маршруту, указанному знаком.",Следуйте по указанному маршруту к аэропорту.,
+m1-243,status,QUARANTINED,VERIFIED,
+m1-244,status,QUARANTINED,VERIFIED,
+m1-245,status,QUARANTINED,VERIFIED,
+m1-246,status,QUARANTINED,VERIFIED,
+m1-247,status,QUARANTINED,VERIFIED,
+m1-249,status,QUARANTINED,VERIFIED,
+m1-256,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-extra-003
+m1-257,source,"Motorcycle Handbook, стр. 17 («Wear protective clothing», обувь)","Motorcycle Handbook, стр. 17 («Wear protective clothing»)","проверено по тексту руководства: Motorcycle Handbook, стр. 17 («Wear protective clothing»)"
+m1-257,status,QUARANTINED,VERIFIED,
+m1-258,source,"Motorcycle Handbook, стр. 17 («Wear protective clothing»)","Motorcycle Handbook, стр. 17 («Layer your clothes»)","проверено по тексту руководства: Motorcycle Handbook, стр. 17 («Layer your clothes»)"
+m1-258,status,QUARANTINED,VERIFIED,
+m1-259,REMOVED,вопрос из банка,REMOVED_UNVERIFIABLE,отдельного раздела о защите глаз в руководстве нет (стр. 17 только о визоре)
+m1-260,REMOVED,вопрос из банка,REMOVED_AMBIGUOUS,"формулировка «в первую очередь» не определяет порядок; ответ — список, а не один пункт"
+m1-261,source,Motorcycle Handbook — Tires; страница не сверена в этом проходе,"Motorcycle Handbook, стр. 28 («Tires»)","проверено по тексту руководства: Motorcycle Handbook, стр. 28 («Tires»)"
+m1-261,status,QUARANTINED,VERIFIED,
+m1-262,REMOVED,вопрос из банка,REMOVED_UNVERIFIABLE,руководство не связывает утечку тормозной жидкости с запретом выезда; стр. 82 — только про «губчатые» тормоза
+m1-263,source,Motorcycle Handbook — Inspection; страница не сверена в этом проходе,"Motorcycle Handbook, стр. 20 (тормозные огни как сигнал другим)","проверено по тексту руководства: Motorcycle Handbook, стр. 20 (тормозные огни как сигнал другим)"
+m1-263,status,QUARANTINED,VERIFIED,
+m1-265,source,Motorcycle Handbook — Controls; страница не сверена в этом проходе,"Motorcycle Handbook, стр. 21 («Clutch lever»)","проверено по тексту руководства: Motorcycle Handbook, стр. 21 («Clutch lever»)"
+m1-265,status,QUARANTINED,VERIFIED,
+m1-266,source,Motorcycle Handbook — Controls; страница не сверена в этом проходе,"Motorcycle Handbook, стр. 33 («Shift lever with your toe»)","проверено по тексту руководства: Motorcycle Handbook, стр. 33 («Shift lever with your toe»)"
+m1-266,status,QUARANTINED,VERIFIED,
+m1-267,source,Motorcycle Handbook — Controls; страница не сверена в этом проходе,"Motorcycle Handbook, стр. 20 («Rear brake lever»)","проверено по тексту руководства: Motorcycle Handbook, стр. 20 («Rear brake lever»)"
+m1-267,status,QUARANTINED,VERIFIED,
+m1-268,source,Motorcycle Handbook — Controls; страница не сверена в этом проходе,"Motorcycle Handbook, стр. 91 и 97 («Cancel signal»)","проверено по тексту руководства: Motorcycle Handbook, стр. 91 и 97 («Cancel signal»)"
+m1-268,status,QUARANTINED,VERIFIED,
+m1-269,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-038
+m1-270,q,Как меняется тормозной путь на мокром покрытии?,Как меняется тормозной путь на скользком (мокром) покрытии?,"исправлено и проверено по тексту руководства: Motorcycle Handbook, стр. 64 («It takes a lot longer to stop on slippery surfaces»)"
+m1-270,source,Motorcycle Handbook — Braking; страница не сверена в этом проходе,"Motorcycle Handbook, стр. 64 («It takes a lot longer to stop on slippery surfaces»)","исправлено и проверено по тексту руководства: Motorcycle Handbook, стр. 64 («It takes a lot longer to stop on slippery surfaces»)"
+m1-270,status,QUARANTINED,CORRECTED_AND_VERIFIED,
+m1-270,options[A],Обычно увеличивается,Значительно увеличивается,
+m1-270,options[C],Становится нулевым с ABS,С ABS становится нулевым,
+m1-271,source,Motorcycle Handbook — Braking; страница не сверена в этом проходе,"Motorcycle Handbook, стр. 35 и 72 («Emergency braking»)","проверено по тексту руководства: Motorcycle Handbook, стр. 35 и 72 («Emergency braking»)"
+m1-271,status,QUARANTINED,VERIFIED,
+m1-272,source,Motorcycle Handbook — Braking; страница не сверена в этом проходе,"Motorcycle Handbook, стр. 72 (ABS)","проверено по тексту руководства: Motorcycle Handbook, стр. 72 (ABS)"
+m1-272,status,QUARANTINED,VERIFIED,
+m1-273,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-011
+m1-274,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-036
+m1-275,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-035
+m1-276,source,Motorcycle Handbook — Cornering; страница не сверена в этом проходе,"Motorcycle Handbook, стр. 34 («look well ahead») и стр. 103 («curve is tighter than you expected»)","исправлено и проверено по тексту руководства: Motorcycle Handbook, стр. 34 («look well ahead») и стр. 103 («curve is tighter than you expected»)"
+m1-276,status,QUARANTINED,CORRECTED_AND_VERIFIED,
+m1-276,options[A],Смотреть через поворот и плавно корректировать скорость и наклон в пределах сцепления,Снизить скорость и смотреть вперёд по траектории поворота,
+m1-277,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-037
+m1-278,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-005
+m1-279,source,Motorcycle Handbook — Visibility; страница не сверена в этом проходе,"Motorcycle Handbook, стр. 49 («you may not see … in these blind spots»)","проверено по тексту руководства: Motorcycle Handbook, стр. 49 («you may not see … in these blind spots»)"
+m1-279,status,QUARANTINED,VERIFIED,
+m1-280,source,Motorcycle Handbook — Following distance; страница не сверена в этом проходе,"Motorcycle Handbook, стр. 59 («block your view more than other vehicles»)","проверено по тексту руководства: Motorcycle Handbook, стр. 59 («block your view more than other vehicles»)"
+m1-280,status,QUARANTINED,VERIFIED,
+m1-281,REMOVED,вопрос из банка,REMOVED_UNVERIFIABLE,в руководстве не найдено утверждение о скольжении разметки в дождь
+m1-282,source,Motorcycle Handbook — Road surfaces; страница не сверена в этом проходе,"Motorcycle Handbook, стр. 61 (slow down; smooth on gravel)","проверено по тексту руководства: Motorcycle Handbook, стр. 61 (slow down; smooth on gravel)"
+m1-282,status,QUARANTINED,VERIFIED,
+m1-283,source,Motorcycle Handbook — Road surfaces; страница не сверена в этом проходе,"Motorcycle Handbook, стр. 64 («wet metal or leaves», масло в центре полосы)","исправлено и проверено по тексту руководства: Motorcycle Handbook, стр. 64 («wet metal or leaves», масло в центре полосы)"
+m1-283,status,QUARANTINED,CORRECTED_AND_VERIFIED,
+m1-283,options[C],"Масло, металлические крышки и окрашенная разметка","Масло, мокрый металл и мокрые листья",
+m1-284,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-094
+m1-285,REMOVED,вопрос из банка,REMOVED_UNVERIFIABLE,в руководстве не найдено правило о боковом ветре
+m1-286,source,Motorcycle Handbook — Road surfaces; страница не сверена в этом проходе,"Motorcycle Handbook, стр. 39 и 64 (wet leaves)","проверено по тексту руководства: Motorcycle Handbook, стр. 39 и 64 (wet leaves)"
+m1-286,status,QUARANTINED,VERIFIED,
+m1-287,source,Motorcycle Handbook — Space cushion; страница не сверена в этом проходе,"Motorcycle Handbook, стр. 46 («time to react… room»)","проверено по тексту руководства: Motorcycle Handbook, стр. 46 («time to react… room»)"
+m1-287,status,QUARANTINED,VERIFIED,
+m1-288,source,Motorcycle Handbook — Blind spots; страница не сверена в этом проходе,"Motorcycle Handbook, стр. 40 («mirrors do not give the whole traffic picture»)","проверено по тексту руководства: Motorcycle Handbook, стр. 40 («mirrors do not give the whole traffic picture»)"
+m1-288,status,QUARANTINED,VERIFIED,
+m1-289,source,Driver's Handbook — Signalling; страница не сверена в этом проходе,"Motorcycle Handbook, стр. 34 («signal well in advance»)","проверено по тексту руководства: Motorcycle Handbook, стр. 34 («signal well in advance»)"
+m1-289,status,QUARANTINED,VERIFIED,
+m1-290,source,Motorcycle Handbook — Scanning; страница не сверена в этом проходе,"Motorcycle Handbook, стр. 38 и 59 (закрытый обзор; увеличить запас)","проверено по тексту руководства: Motorcycle Handbook, стр. 38 и 59 (закрытый обзор; увеличить запас)"
+m1-290,status,QUARANTINED,VERIFIED,
+m1-291,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-001
+m1-292,REMOVED,вопрос из банка,REMOVED_DUPLICATE,дубликат активного m1-054
+m1-293,REMOVED,вопрос из банка,REMOVED_UNVERIFIABLE,"в руководстве не найдено правило о действиях, если группа оторвалась"
+m1-294,source,"Driver’s Handbook — раздел «Traffic lights», стр. 143","Driver’s Handbook, стр. 143 («A red light means you must stop… at the stop line»)","проверено по тексту руководства: Driver’s Handbook, стр. 143 («A red light means you must stop… at the stop line»)"
+m1-294,status,QUARANTINED,CORRECTED_AND_VERIFIED,
+m1-294,options[C],Остановиться и выполнять правила остановки,"Полностью остановиться у стоп-линии (или перед пешеходным переходом, если линии нет)",
+m1-295,source,"Driver’s Handbook — раздел «Flashing red light», стр. 147","Driver’s Handbook, стр. 147 («must come to a complete stop at a flashing red light»)","проверено по тексту руководства: Driver’s Handbook, стр. 147 («must come to a complete stop at a flashing red light»)"
+m1-295,status,QUARANTINED,VERIFIED,
+m1-296,source,"Driver’s Handbook — раздел «Flashing yellow light», стр. 147","Driver’s Handbook, стр. 147 («flashing yellow… drive with caution»)","проверено по тексту руководства: Driver’s Handbook, стр. 147 («flashing yellow… drive with caution»)"
+m1-296,status,QUARANTINED,VERIFIED,
+m1-297,source,Driver's Handbook — Changing lanes; страница не сверена в этом проходе,"Driver’s Handbook, стр. 73 (шаги перестроения: зеркала, слепая зона, сигнал)","проверено по тексту руководства: Driver’s Handbook, стр. 73 (шаги перестроения: зеркала, слепая зона, сигнал)"
+m1-297,status,QUARANTINED,VERIFIED,
+m1-298,source,"Driver’s Handbook — раздел «Traffic signs» (знак STOP), стр. 118","Driver’s Handbook, стр. 118 (знак STOP — полная остановка)","проверено по тексту руководства: Driver’s Handbook, стр. 118 (знак STOP — полная остановка)"
+m1-298,status,QUARANTINED,VERIFIED,
+m1-299,source,Driver's Handbook — Emergency vehicles; страница не сверена в этом проходе,"Driver’s Handbook, стр. 68–69 («Pull over for emergency vehicles»)","проверено по тексту руководства: Driver’s Handbook, стр. 68–69 («Pull over for emergency vehicles»)"
+m1-299,status,QUARANTINED,VERIFIED,
+m1-300,source,Driver's Handbook — Pedestrian crossings; страница не сверена в этом проходе,"Driver’s Handbook, стр. 41 («must stop and yield… at pedestrian crossovers»)","проверено по тексту руководства: Driver’s Handbook, стр. 41 («must stop and yield… at pedestrian crossovers»)"
+m1-300,status,QUARANTINED,VERIFIED,

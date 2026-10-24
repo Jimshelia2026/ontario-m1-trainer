@@ -1,0 +1,25 @@
+{
+ "total": 275,
+ "examEligible": 262,
+ "studyOnly": 13,
+ "changedOriginal": [
+  "m1-080",
+  "m1-088",
+  "m1-233",
+  "m1-282",
+  "m1-300"
+ ],
+ "svgReplacements": 0,
+ "mapping": {
+  "draft-v63-001": "m1-v63-001",
+  "draft-v63-001b": "m1-v63-002",
+  "draft-v63-002": "m1-v63-003",
+  "draft-v63-003": "m1-v63-004",
+  "draft-v63-004": "m1-v63-005",
+  "draft-v63-N01": "m1-v63-006",
+  "draft-v63-N02": "m1-v63-007",
+  "draft-v63-005": "m1-v63-s01",
+  "draft-v63-N03": "m1-v63-s02",
+  "draft-v63-N04": "m1-v63-s03"
+ }
+}

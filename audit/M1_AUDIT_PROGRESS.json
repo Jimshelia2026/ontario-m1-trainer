@@ -1,0 +1,19 @@
+{
+ "version": "6.1",
+ "original_ids": 299,
+ "original_options": 1196,
+ "final_status_counts": {
+  "CORRECTED_AND_VERIFIED": 30,
+  "VERIFIED": 235,
+  "REMOVED_DUPLICATE": 28,
+  "REMOVED_UNVERIFIABLE": 5,
+  "REMOVED_AMBIGUOUS": 1
+ },
+ "active": 265,
+ "quarantined": 0,
+ "removed": 34,
+ "options_assessed": 1028,
+ "options_replaced": 32,
+ "options_not_assessed": 0,
+ "options_removed": 136
+}

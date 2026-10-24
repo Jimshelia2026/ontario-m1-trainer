@@ -1,0 +1,16 @@
+{
+  "name": "ontario-m1-trainer-v6.3-local",
+  "version": "6.3.0-local",
+  "private": true,
+  "description": "Локальный предварительный просмотр v6.3 (не опубликован)",
+  "scripts": {
+    "test": "node --test tests/v63/exam64.unit.test.js tests/v63/v63_fixes.test.js tests/v63/e2e_jsdom.test.js",
+    "test:unit": "node --test tests/v63/exam64.unit.test.js tests/v63/v63_fixes.test.js",
+    "test:jsdom": "node --test tests/v63/e2e_jsdom.test.js",
+    "test:browser": "python3 tests/v63/browser_playwright.py http://127.0.0.1:8630/index.html chromium",
+    "build:data": "node tools/build_data.js"
+  },
+  "devDependencies": {
+    "jsdom": "^24.0.0"
+  }
+}
