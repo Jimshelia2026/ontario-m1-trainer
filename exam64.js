@@ -381,7 +381,7 @@
       + '<div class="progress"><div style="width:' + Math.round(100 * answered / n) + '%"></div></div>'
       + '<div class="q">' + esc(q.q) + '</div>' + img + opts
       + '<div class="grid">' + grid + '</div>'
-      + '<div class="row"><button class="btn" data-e64="prev" ' + (idx === 0 ? 'disabled' : '') + '>← Назад</button>'
+      + '<div class="row e64-nav"><button class="btn" data-e64="prev" ' + (idx === 0 ? 'disabled' : '') + '>← Назад</button>'
       + '<button class="btn" data-e64="home">На главную</button>'
       + '<button class="btn primary" data-e64="submit">Отправить тест</button>'
       + '<button class="btn" data-e64="next" ' + (idx >= n - 1 ? 'disabled' : '') + '>Далее →</button></div>'

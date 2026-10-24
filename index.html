@@ -108,26 +108,85 @@
   }
   .banner { border:1px solid var(--line); border-radius:10px; padding:10px 14px; margin:0 0 10px; background:var(--card); color:var(--text); }
   .banner.warn { border-color:var(--red); color:var(--red); }
+
+  /* ---- v6.3 мобильный интерфейс: компактная шапка и меню-шторка (≤719px); десктоп не меняется ---- */
+  html { -webkit-text-size-adjust: 100%; }
+  .menu-btn, .menu-head, .menu-backdrop { display: none; }
+  .menu-panel { display: contents; }
+  .title-short { display: none; }
+  @media (max-width: 719px), (max-height: 500px) {
+    header { position: sticky; top: 0; z-index: 30; flex-wrap: nowrap; justify-content: space-between; align-items: center; gap: 8px; min-height: 52px; padding: 4px 12px; }
+    header h1 { flex: 1 1 auto; min-width: 0; font-size: 1rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .title-full { display: none; }
+    .title-short { display: inline; }
+    .menu-btn { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; min-width: 44px; min-height: 44px; padding: 0; font-size: 22px; line-height: 1; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--text); cursor: pointer; }
+    .menu-panel[hidden] { display: none; }
+    .menu-panel { display: flex; flex-direction: column; gap: 10px; position: fixed; left: 50%; top: 0; transform: translateX(-50%); width: 100%; max-width: 440px; z-index: 40; max-height: calc(100vh); max-height: 100dvh; overflow-y: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; padding: env(safe-area-inset-top, 0px) 12px calc(env(safe-area-inset-bottom, 0px) + 16px); background: var(--card); box-shadow: 0 10px 28px rgba(0,0,0,.28); }
+    .menu-head { display: flex; align-items: center; justify-content: space-between; min-height: 52px; margin: 0 -12px; padding: 4px 12px; border-bottom: 1px solid var(--line); }
+    .menu-head strong { font-size: 1.05rem; }
+    .menu-close { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 0; font-size: 20px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--text); cursor: pointer; }
+    .menu-panel nav { display: flex; flex-direction: column; gap: 6px; }
+    .menu-panel nav button { width: 100%; min-height: 48px; padding: 12px 14px; text-align: left; font-size: 1rem; }
+    .menu-tools { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .menu-tools button { min-height: 48px; }
+    .menu-tools .dark-btn { grid-column: 1 / -1; }
+    .menu-backdrop { display: block; position: fixed; inset: 0; z-index: 35; background: rgba(0,0,0,.35); touch-action: none; }
+    .menu-backdrop[hidden] { display: none; }
+    body.menu-open { overflow: hidden; }
+    main { max-width: none; padding: 10px 12px calc(16px + env(safe-area-inset-bottom, 0px)); }
+    .card { padding: 14px; border-radius: 12px; }
+    .meta { font-size: .8em; margin-bottom: 8px; }
+    .q { font-size: 1.1em; margin: 4px 0 12px; overflow-wrap: anywhere; }
+    .opt { min-height: 48px; padding: 12px 14px; margin: 6px 0; overflow-wrap: anywhere; }
+    .expl, .src { overflow-wrap: anywhere; }
+    .expl { font-size: .95em; }
+    .btn, select { min-height: 44px; }
+    .grid button { min-height: 44px; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px; }
+    .row > * { min-width: 0; }
+    .row .toolbar { grid-column: 1 / -1; order: 2; }
+    .row > [data-act="prev"] { order: 0; }
+    .row > [data-act="next"] { order: 1; }
+    .row > [data-act="prev"], .row > [data-act="next"] { min-height: 48px; }
+    .e64-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .e64-nav [data-e64="prev"] { order: 0; }
+    .e64-nav [data-e64="next"] { order: 1; }
+    .e64-nav [data-e64="home"] { order: 2; }
+    .e64-nav [data-e64="submit"] { order: 3; }
+    .e64-nav > .btn { min-height: 48px; }
+    .card:has(> .e64-nav) { display: flex; flex-direction: column; }
+    .card:has(> .e64-nav) > .e64-nav { order: 1; margin-top: 14px; }
+    .card:has(> .e64-nav) > .grid { order: 2; }
+    .card:has(> .e64-nav) > .note { order: 3; }
+  }
 </style>
 </head>
 <body>
 <header>
-  <h1>Ontario M1 — тренажёр знаний</h1>
-  <nav>
-    <button data-mode="learn" class="active">Обучение</button>
-    <button data-mode="practice">Практика</button>
-    <button data-mode="exam">Симуляция M1</button>
-    <button data-mode="exam64">Симуляция 64</button>
-    <button data-mode="mistakes">Ошибки</button>
-    <button data-mode="signs">Дорожные знаки</button>
-    <button data-mode="progress">Прогресс</button>
-    <button data-mode="lessons">Визуальные уроки</button>
-  </nav>
-  <div class="toolbar">
-    <button class="btn" data-act="fs" data-v="-1" aria-label="Уменьшить текст">A−</button>
-    <button class="btn" data-act="fs" data-v="1" aria-label="Увеличить текст">A+</button>
-    <button class="btn" data-act="dark">Тёмная тема</button>
+  <h1><span class="title-full">Ontario M1 — тренажёр знаний</span><span class="title-short">Ontario M1</span></h1>
+  <button type="button" id="menuBtn" class="menu-btn" aria-expanded="false" aria-controls="menuPanel" aria-label="Открыть меню разделов">☰</button>
+  <div id="menuPanel" class="menu-panel" role="dialog" aria-modal="true" aria-label="Меню разделов" hidden>
+    <div class="menu-head">
+      <strong>Разделы</strong>
+      <button type="button" id="menuClose" class="menu-close" aria-label="Закрыть меню">✕</button>
+    </div>
+    <nav id="mainNav" aria-label="Разделы">
+      <button data-mode="learn" class="active">Обучение</button>
+      <button data-mode="practice">Практика</button>
+      <button data-mode="exam">Симуляция M1</button>
+      <button data-mode="exam64">Симуляция 64</button>
+      <button data-mode="mistakes">Ошибки</button>
+      <button data-mode="signs">Дорожные знаки</button>
+      <button data-mode="progress">Прогресс</button>
+      <button data-mode="lessons">Визуальные уроки</button>
+    </nav>
+    <div class="toolbar menu-tools">
+      <button class="btn" data-act="fs" data-v="-1" aria-label="Уменьшить текст">A−</button>
+      <button class="btn" data-act="fs" data-v="1" aria-label="Увеличить текст">A+</button>
+      <button class="btn dark-btn" data-act="dark">Тёмная тема</button>
+    </div>
   </div>
+  <div id="menuBackdrop" class="menu-backdrop" hidden></div>
 </header>
 <div id="banner" style="max-width:900px;margin:12px auto 0;padding:0 20px"></div>
 <main>
@@ -148,5 +207,6 @@
 <script src="lessons.js"></script>
 <script src="app.js"></script>
 <script src="exam64.js"></script>
+<script src="mobile-nav.js"></script>
 </body>
 </html>
